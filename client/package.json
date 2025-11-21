@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "vercel-build": "npm install --force && vite build",
+    "vercel-build": "rm -rf node_modules package-lock.json && npm install && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },

@@ -23,8 +23,9 @@
       "dest": "client/dist/$1"
     }
   ],
-  "installCommand": "cd client && npm install --legacy-peer-deps && cd ../server && npm install",
   "env": {
-    "NODE_ENV": "production"
+    "NODE_ENV": "production",
+    "NPM_CONFIG_PLATFORM": "linux",
+    "NPM_CONFIG_ARCH": "x64"
   }
 }
